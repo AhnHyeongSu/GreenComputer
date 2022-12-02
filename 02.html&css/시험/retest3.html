@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 5px;
+            padding: 0;
+        }
+        p {
+            top: 0;
+            color: green;
+        }
+
+        header, nav, footer {
+            width: 1800px;
+            border: 2px solid green;
+        }
+        header {
+            height: 180px;
+        }
+        nav {
+            height: 100px;
+        }
+        section {
+            width: 1080px;
+            height: 500px;
+            border: 2px solid green;
+            float: left;
+        }
+        aside {
+            position: absolute;
+            width: 625px;
+            height: 500px;
+            border: 2px solid green;
+            margin-left: 1180px;
+        }
+        footer {
+            height: 150px;
+            clear: both;
+            background-color: cadetblue;
+        }
+
+        #tedori {
+            background-color: white;
+            border-top: 5px solid gray;
+            display: inline-block;
+            width: 1600px;
+            height: 100px;
+            margin-left: 100px;
+        }
+        #address {
+            float: left;
+            font-size: small;
+            margin-left: 40px;
+        }
+        #address >p {
+            color: black;
+        }
+        #customer {
+            float: right;
+            font-size: x-large;
+            margin-right: 40px;
+        }
+        footer >p {
+            width: 100px;
+            margin-bottom: 0;
+        }
+        img {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>상단 헤더</p>
+    </header>
+    <nav>
+        <p>내비게이션 메뉴</p>
+    </nav>
+    <section>
+        <p>메인 콘텐츠</p>
+    </section>
+    <aside>
+        <p>사이드바</p>
+    </aside>
+    <footer>
+        <p>하단 푸터</p>
+        <div id="tedori">
+            <div id="address">
+                <p>루바토 손해보험(주) | 대표이사: 홍길동 | 사업자등록번호: 123-12-12345<br>
+                전화: 042-123-1234 | 대전 서구 갈마동 그린컴퓨터아카데미<br><br>
+                Copyright by Rubato Company</p>
+            </div>
+            <div id="customer">
+                <p>고객센터 1588-1234</p>
+                <img src="C:/web/images/ddad.png">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
