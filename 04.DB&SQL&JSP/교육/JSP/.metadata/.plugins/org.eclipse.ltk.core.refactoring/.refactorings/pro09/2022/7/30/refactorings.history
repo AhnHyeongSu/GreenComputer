@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;pro09/src/main/webapp/popUp.html&apos; to &apos;popupTest.html&apos;" description="Rename resource &apos;popUp.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/popUp.html" name="popupTest.html" stamp="1658298462395" updateReferences="true"/>
+</session>

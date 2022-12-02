@@ -1,0 +1,40 @@
+package sec02.ex02;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import sec02.ex01.MemberDAO;
+
+
+@WebServlet(asyncSupported = true, urlPatterns = { "*.do" })
+public class MemberController2 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	MemberDAO memberDAO; 
+	
+	
+	public void init() throws ServletException {
+		memberDAO = new MemberDAO();
+	}
+
+	public void destroy() {
+		
+	}
+
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doHandle(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doHandle(request, response);
+	}
+	
+	private void doHandle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+	}
+
+}
