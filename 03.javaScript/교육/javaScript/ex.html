@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            position: relative;
+        }
+        div{
+            background: red;
+            width: 500px;
+        }
+        header h1 {
+            margin-right: 100px;
+            width: 150px;
+            border: 3px solid green;
+            color: green;
+        }
+        header, nav, footer {
+            border: 2px solid green;
+            margin-top: 5px;
+        }
+        section {
+            display: inline-block;
+            width: 65%;
+            border: 2px solid green;
+            margin-top: 5px;
+            height: 100px;
+        }
+        aside {
+            display: inline-block;
+            /* 사이드바 사이즈 조정 */
+            margin-left: 58px;
+            width: 25%;
+            border: 2px solid green;
+            height: 100px;
+        }
+        ul {
+            list-style: none;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            text-decoration: none;
+            
+        }
+        ul li {
+            display: inline-block;
+            float: right;
+            padding: 0;
+            margin: 2px;
+            text-decoration: none;
+        }
+        header> p{
+            text-align: center;
+            width: 100px;
+            margin-left: 850px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="">
+            <h1>RUBATO</h1>
+            <p>신뢰로 보답하는 루비토손해보험</p>
+        </div>
+        <p>상단 헤더</p>
+        <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">사이트 맵</a></li>
+            <li><a href="#">회사소개</a></li>
+        </ul>
+    </header>
+    <nav>
+        <p>내비게이션메뉴</p>
+    </nav>
+    <section>
+        <p>메인 콘텐츠</p>
+    </section>
+    <aside>
+        <p>사이드바</p>
+    </aside>
+    <footer>
+        <p>하단 푸터</p>
+    </footer>
+</body>
+</html>

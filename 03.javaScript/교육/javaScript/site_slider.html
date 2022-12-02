@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지슬라이더</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.slider').bxSlider({
+                slideWidth : 480,
+                auto: true,
+                speed : 500,
+                pause: 3000,
+                mode : 'horizontal',
+                autoControls: true,
+                pager: true
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="slider">
+        <img class="image" src="C:web/images/beach.jpg">
+        <img class="image" src="C:web/images/mountain.jpg">
+        <img class="image" src="C:web/images/waterfall.jpg">
+        <img class="image" src="C:web/images/sea.jpg">
+        <div class="image">
+            <h1>이미지가 아닌 것</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div></li>
+    </div>
+</body>
+</html>

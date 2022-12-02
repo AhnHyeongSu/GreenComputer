@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 5px;
+            padding: 0;
+        }
+        header, nav, footer {
+            width: 98%;
+            border: 2px solid green;
+        }
+
+        header {
+            height: 100px;
+        }
+        nav {
+            height: 70px;
+        }
+        section {
+            border: 2px solid green;
+            width: 70%;
+            height: 300px;
+            float: left;
+            background: url('/images/cat.jpg');
+            
+        }
+        aside {
+            margin-right: 30px;
+            border: 2px solid green;
+            width: 23%;
+            height: 300px;
+            float: right;
+        }
+        footer {
+            display: inline-block;
+            background-color:rgb(210, 230, 220);
+            clear: both;
+            height: 180px;
+        }
+        p {
+            margin-top: 0;
+            color: green;
+            font-weight: bold;
+        }
+        .ftr {
+            display: inline-block;
+            margin-top: 20px;
+            width: 80%;
+            height: 150px;
+            border-top: 2px solid gary;
+            background-color: white;
+        }
+        #address {
+            display: inline-block;
+            margin: 30px 10px;
+        }
+        #customer {
+            margin-top: 50px;
+            margin-right: 30px;
+            float: right;
+        }
+        footer >p {
+            float: left;
+            width: 15%;
+        }
+        #address >p {
+            color: black;
+        }
+        #customer >p {
+            font-size: larger;
+        }
+        img {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>상단 헤더</p>
+    </header>
+    <nav>
+        <p>내비게이션 메뉴</p>
+    </nav>
+    <section>
+        <p>메인 콘텐츠</p>
+    </section>
+    <aside>
+        <p>사이드바</p>
+    </aside>
+    <footer>
+        <p>하단푸터</p>
+        <div class="ftr">
+            <div id="address">
+                <p>루바토 손해보험(주) | 대표이사: 홍길동 | 사업자등록번호: 123-456<br>
+                전화: 042-123-4567 | 대전 서구 둔산동 그린컴퓨터아카데미<br><br>
+                Copyright by Rubato Company</p>
+            </div>
+            <div id="customer">
+                <p>고객센터 1588-1234</p>
+                <img src="C:/web/images/ddad.png">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+           const width = object.width ||460;
+           const height = object.width || 300;
+           let current = 0;
+           
+           const moveTo = function() {
+            $(this).find('.images').animate({
+                left: -current * width
+            }, 1000);
+           };
+           
+           const imageLength = $(this).find('.image').length;
+
+           for(let i=0; i<imageLength; i++) {
+            $('<buttom></button>')
+                .attr('data-position', i)
+                .text(i)
+                .click(function() {
+                    current = $(this).attr('data-position');
+                    moveTo();
+                })
+                .insertBefore(this);
+           }
+
+           $(this).css({
+            position: 'relative',
+            width: width,
+            height: height,
+            overflow: 'hidden'
+           });
+
+           $(this).find('.images').css({
+            position: 'absolute',
+            width: width * imageLength
+           });
+
+           $(this).find('.image').css({
+            margin: 0,
+            padding: 0,
+            width: width,
+            height: height,
+            display: 'block',
+            float: 'left'
+           });
+
+           setInterval(function() {
+            current = current +1;
+            current = current % imageLength;
+            moveTo();
+           }, 3000);
+        });
+
+    </script>
+</head>
+<body>
+    <div class="slider">
+        <div class="images">
+            <img class="image" src="C:web/images/beach.jpg">
+            <img class="image" src="C:web/images/mountain.jpg">
+            <img class="image" src="C:web/images/waterfall.jpg">
+            <img class="image" src="C:web/images/sea.jpg">
+            <div class="image">
+                <h1>이미지가 아닌 것</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 5px;
+            padding: 0;
+        }
+        header, nav, footer {
+            width: 98%;
+            border: 2px solid green;
+        }
+
+        header {
+            position: relative;
+            height: 100px;
+            background-color: rgb(210, 230, 220);
+        }
+        nav {
+            height: 70px;
+        }
+        section {
+            border: 2px solid green;
+            width: 70%;
+            height: 300px;
+            float: left;
+            background: url('/images/cat.jpg');
+            
+        }
+        aside {
+            margin-right: 30px;
+            border: 2px solid green;
+            width: 23%;
+            height: 300px;
+            float: right;
+        }
+        footer {
+            clear: both;
+            height: 180px;
+        }
+        p {
+            margin-top: 0;
+        }
+
+        #logo {
+            float: left;
+            margin-top: 15px;
+            width: 25%;
+            height: auto;
+            background-color: white;
+
+        }
+        #top {
+            position: relative;
+            margin-top: 40px;
+            margin-right: 30px;
+            width: 15%;
+            height: auto;
+            list-style: none;
+            background-color: white;
+            float: right;
+
+        }
+        ul li {
+            margin: 0;
+            display: inline-block;
+        }
+        a {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+        .logotext {
+            display: inline-block;
+        }
+        header >p {
+            position: absolute;
+            text-align: center;
+            width: 10%;
+            bottom: 0;
+            margin-left: 45%;
+            color: green;
+        }
+        h1 {
+            color: green;
+            border: 2px solid green;
+        }
+        :hover >a {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <div class="logotext">
+            <h1>RUBATO</h1>
+            </div>
+            <div class="logotext">
+            <p>신뢰로 보답하는 루비토손해보험</p>
+            </div>
+        </div>
+        <p>상단 헤더</p>
+        <ul id="top">
+            <li><a href="#">로그인|</a></li>
+            <li><a href="#">회원가입|</a></li>
+            <li><a href="#">사이트 맵|</a></li>
+            <li><a href="#">회사소개</a></li>                      
+        </ul>
+    </header>
+    <nav>
+        <p>내비게이션 메뉴</p>
+    </nav>
+    <section>
+        <p>메인 콘텐츠</p>
+    </section>
+    <aside>
+        <p>사이드바</p>
+    </aside>
+    <footer>
+        <p>하단푸터</p>
+    </footer>
+</body>
+</html>

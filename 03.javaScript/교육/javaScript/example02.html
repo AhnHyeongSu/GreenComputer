@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 5px;
+            padding: 0;
+        }
+        p {
+            top: 0;
+            color: green;          
+        }
+
+        header, nav, footer {
+            width: 1800px;
+            border: 2px solid green;
+        }
+        header {
+            height: 180px;
+            background-color:cadetblue;
+        }
+        nav {
+            height: 100px;
+        }
+        section {
+            width: 1080px;
+            height: 500px;
+            border: 2px solid green;
+            float: left;
+        }
+        aside {
+            position: absolute;
+            width: 625px;
+            height: 500px;
+            border: 2px solid green;
+            margin-left: 1180px;
+        }
+        footer {
+            height: 150px;
+            clear: both;
+        }
+        #logo {
+            float: left;
+            background-color: white;
+            border: 1px solid black;
+
+            margin-top: 60px;
+        }
+        #top {
+            float: right;
+            margin-right: 40px;
+        }
+        #logo >h1 {
+            border: 3px solid green;
+            padding: 5px;
+        }
+        #logo >p {
+            color: black;
+        }
+        #logotext {
+            display: inline-block;
+        }
+        header >p {
+            position: absolute;
+            margin-left: 900px;
+            margin-top: 150px;
+        }
+        ul {
+            list-style: none;
+            margin-top: 80px;
+            background-color: white;
+        }
+        ul li {
+            display: inline-block;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        :hover >a {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1 id="logotext">RUBATO</h1>
+            <p id="logotext">신뢰로 보답하는 루비토손해보험</p>
+        </div>
+        <p>상단 헤더</p>
+        <ul id="top">
+            <li><a href="#">로그인 |</a></li>
+            <li><a href="#">회원가입 |</a></li>
+            <li><a href="#">사이트 맵 |</a></li>
+            <li><a href="#">회사소개</a></li>
+        </ul>
+    </header>
+    <nav>
+        <p>내비게이션 메뉴</p>
+    </nav>
+    <section>
+        <p>메인 콘텐츠</p>
+    </section>
+    <aside>
+        <p>사이드바</p>
+    </aside>
+    <footer>
+        <p>하단 푸터</p>
+    </footer>
+</body>
+</html>
