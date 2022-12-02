@@ -1,0 +1,5 @@
+package com.myboot03.member.service;
+
+public class MemberServiceImpl {
+
+}

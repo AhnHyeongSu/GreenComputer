@@ -1,0 +1,5 @@
+package com.myboot03.common.titles;
+
+public class TilesConfig {
+
+}

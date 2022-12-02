@@ -1,0 +1,5 @@
+package com.myboot03.common.intercepter;
+
+public class InterceptorConfig {
+
+}

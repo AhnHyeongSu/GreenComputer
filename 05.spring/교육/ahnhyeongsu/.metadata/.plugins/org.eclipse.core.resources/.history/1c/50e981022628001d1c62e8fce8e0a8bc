@@ -1,0 +1,16 @@
+package com.proTest.member.dao;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.dao.DataAccessException;
+import org.springframework.stereotype.Repository;
+
+import com.proTest.member.vo.MemberVO;
+
+@Mapper
+@Repository("memberDAO")
+public interface MemberDAO {
+	public List selectAllMemberList() throws DataAccessException;
+	
+}

@@ -1,0 +1,5 @@
+package com.proTest.member.service;
+
+public class MemberServiceImpl {
+
+}

@@ -1,0 +1,5 @@
+package com.proTest.member.vo;
+
+public class MemberVO {
+
+}

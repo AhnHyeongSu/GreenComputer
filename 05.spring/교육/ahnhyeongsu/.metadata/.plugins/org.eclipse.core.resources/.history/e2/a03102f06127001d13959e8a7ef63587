@@ -1,0 +1,5 @@
+package com.myboot03.board.service;
+
+public class BoardServiceImpl {
+
+}

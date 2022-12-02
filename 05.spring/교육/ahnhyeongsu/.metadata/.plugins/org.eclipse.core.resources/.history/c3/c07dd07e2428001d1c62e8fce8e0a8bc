@@ -1,0 +1,5 @@
+package com.proTest.member.controller;
+
+public class MemberControllerImpl {
+
+}
